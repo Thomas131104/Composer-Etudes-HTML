@@ -1,0 +1,123 @@
+/*Hiệu ứng ảnh một bên, văn bản 1 bên*/
+
+.introduction .image {
+    float: left;
+    margin-right: 15px; /* Tạo khoảng cách với văn bản */
+    text-align: center; /* Căn giữa chú thích */
+}
+
+.introduction .image img {
+    display: block; /* Giúp ảnh không bị ảnh hưởng bởi khoảng trắng thừa */
+}
+
+.introduction {
+    overflow: hidden; /* Đảm bảo phần tử cha chứa được float */
+}
+
+
+
+
+/*Hiệu ứng grid*/
+
+main .piece
+{
+    display: grid;
+    border: 3px;
+    border-radius: 1px;
+    background-color: chocolate;
+    border: 2px black solid;
+}
+
+.col-name {
+    display: grid; /* Đặt col-name là grid để chứa các phần tử con theo dạng hàng */
+    grid-template-columns: 1fr 2fr 1fr; /* Xác định 3 cột trong hàng */
+    border: 2px black solid;
+
+}
+
+
+.col-name-1, .col-name-2, .col-name-3 {
+    padding: 10px; /* Đặt khoảng cách padding nếu cần */
+    text-align: center; /* Căn giữa nội dung */
+    margin: 10px;
+    font: bold;
+    font-size: 45;
+}
+
+
+.col-name-2
+{
+    border-left: 2px black solid;
+    border-right: 2px black solid;
+}
+
+
+.col
+{
+    display: grid; /* Đặt col-name là grid để chứa các phần tử con theo dạng hàng */
+    grid-template-columns: 1fr 2fr 1fr; /* Xác định 3 cột trong hàng */
+    background-color: #FFECA1;
+    margin: 10px;
+    padding: 10px;
+    border: 2px black solid;
+}
+
+
+
+.col-1, .col-3
+{
+    background-color: lightgreen;
+    color: black;
+    padding: 0 auto;
+    text-align: center;
+}
+
+
+.col-2
+{
+    background-color: white;
+    padding: 10px;
+    border-left: 2px black solid;
+    border-right: 2px black solid;
+}
+
+
+
+
+
+
+.col-3
+{
+    text-align: left;
+}
+
+
+
+/*Hiệu ứng Pagination*/
+
+footer .next-page
+{
+    text-align: center;
+}
+
+footer .next-page a
+{
+    color: black;
+    text-decoration: none;
+    padding: 8px 15px;
+    display: inline-block;
+}
+
+footer .next-page a.active
+{
+    background-color: lightgreen;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+footer .next-page a:hover:not(.active)
+{
+    background-color: hsl(0, 0%, 66%);
+    border: 5px;
+}
+
